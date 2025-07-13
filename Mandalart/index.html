@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bihar Mandala Art Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <i class="fas fa-dharmachakra logo-icon"></i>
+        <h1>Bihar Mandala Art Generator</h1>
+      </div>
+      <p class="tagline">
+        Create stunning digital Mandala art inspired by the rich cultural heritage of Bihar. Experience realistic 3D effects and beautiful color schemes.
+      </p>
+    </header>
+
+    <div class="content">
+      <div class="responsive-layout">
+        
+        <!-- MANDALA PREVIEW PANEL -->
+        <div class="panel canvas-container">
+          <h2><i class="fas fa-image"></i> Mandala Preview</h2>
+          <div class="canvas-wrapper">
+            <canvas id="mandalaCanvas" width="800" height="800"></canvas>
+            <div class="loading" id="loading">
+              <div class="spinner"></div>
+              <p>Creating your beautiful mandala...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTROLS PANEL -->
+        <div class="panel controls">
+          <div class="control-group">
+            <h2><i class="fas fa-sliders-h"></i> Controls</h2>
+            <div class="buttons">
+              <button id="generateBtn" class="btn btn-primary">
+                <i class="fas fa-sync-alt"></i> Generate New Mandala
+              </button>
+              <button id="downloadBtn" class="btn btn-secondary">
+                <i class="fas fa-download"></i> Download Image
+              </button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h2><i class="fas fa-cog"></i> Options</h2>
+            <div class="options">
+              <div class="option" id="option3d">
+                <div class="checkbox">
+                  <input type="checkbox" id="3dToggle" checked />
+                  <span class="checkmark"></span>
+                </div>
+                <div class="option-text">
+                  <div class="option-title">3D Effect</div>
+                  <div class="option-desc">Add depth and perspective to your mandala</div>
+                </div>
+              </div>
+
+              <div class="option" id="optionBw">
+                <div class="checkbox">
+                  <input type="checkbox" id="bwToggle" />
+                  <span class="checkmark"></span>
+                </div>
+                <div class="option-text">
+                  <div class="option-title">Black & White</div>
+                  <div class="option-desc">Create a monochromatic mandala</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h2><i class="fas fa-info-circle"></i> About Bihar Mandalas</h2>
+            <p style="color: #bbb; line-height: 1.6; margin-top: 10px;">
+              Mandala art has deep roots in Bihar's spiritual traditions, particularly in Buddhist practices.
+              These intricate geometric patterns symbolize the universe and are used for meditation and spiritual guidance.
+              Our generator incorporates motifs inspired by Bihar's ancient art forms found in temples and historical sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Bihar Mandala Art Generator | Celebrate the Artistry of Bihar</p>
+      <div class="bihar-elements">
+        <div class="element"><i class="fas fa-university"></i> Nalanda Inspired</div>
+        <div class="element"><i class="fas fa-om"></i> Spiritual Patterns</div>
+        <div class="element"><i class="fas fa-hands-praying"></i> Meditation Art</div>
+        <div class="element"><i class="fas fa-university"></i> copyright @shubham 2025</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
